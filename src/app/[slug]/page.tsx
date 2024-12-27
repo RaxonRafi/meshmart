@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Link from 'next/link';
 import ProductImages from '@/components/ProductImages';
 import CustomizeProducts from '@/components/CustomizeProducts';
 import Add from '@/components/Add';

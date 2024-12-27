@@ -1,6 +1,8 @@
 "use client"
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+
 
 const CartModal = () => {
     const cartItems = true;
@@ -75,8 +77,15 @@ const CartModal = () => {
                    Shipping and taxes calculated at checkout.
                 </p>
                 <div className='flex justify-between text-sm'>
-                    <button className='rounded-md py-3 px-4 ring ring-gray-300'>View Cart</button>
-                    <button className='rounded-md py-3 px-4 bg-black text-white'>Checkout</button>
+
+
+                    <Link href="/cart">
+                        <button className='rounded-md py-3 px-4 ring ring-gray-300'>View Cart</button>
+                    </Link>
+            
+                    <Link href="/checkout">
+                        <button className='rounded-md py-3 px-4 bg-black text-white'>Checkout</button>
+                    </Link>
                 </div>
 
             </div>
