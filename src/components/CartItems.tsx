@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const CartItems = () => {
@@ -91,12 +92,18 @@ const CartItems = () => {
                 </table>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-4">
-                <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-                    Continue Shopping
-                </button>
-                <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
-                    Update Shopping Cart
-                </button>
+
+                <Link href="/">
+                    <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+                        Continue Shopping
+                    </button>
+                </Link>
+                <Link href="/">
+                    <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+                        Update Shopping Cart
+                    </button>
+                </Link>
+                
                 <button className="px-4 py-2 bg-rafi hover:bg-red-600 text-white rounded">
                     Clear Shopping Cart
                 </button>
